@@ -4,16 +4,16 @@ import resolve from 'rollup-plugin-node-resolve';
 
 import pkg from './package.json';
 
-const fileExtensions = ['.js', '.jsx', '.ts', '.tsx'];
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 const rollupConfig = {
   input: './src/index.ts',
-  external: ['react'],
+  external: ['react', 'styled-components'],
   plugins: [
-    resolve({ fileExtensions }),
+    resolve({ extensions }),
     commonjs(),
     babel({
-      fileExtensions,
+      extensions,
       include: ['src/**/*'],
       exclude: ['**/*.test.ts', '**/*.test.tsx'],
     }),

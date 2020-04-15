@@ -32,7 +32,7 @@
     "type-check:watch": "yarn type-check --watch",
     "build": "npm-run-all build:* --parallel",
     "build:js": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly",
+    "builds:types": "tsc --emitDeclarationOnly",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
