@@ -1,0 +1,10 @@
+{
+  "name": "flora11y",
+  "version": "0.0.1",
+  "description": "Flora11y is a project of WCAG 2.1 AA compliant UI kit",
+  "main": "index.js",
+  "repository": "git@github.com:hiwelo/flora11y.git",
+  "author": "Damien Senger <damien@raccoon.studio>",
+  "license": "MIT",
+  "private": true
+}
