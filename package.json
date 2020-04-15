@@ -1,6 +1,9 @@
 {
   "name": "flora11y",
   "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "Flora11y is a project of WCAG 2.1 AA compliant UI kit",
   "main": "index.js",
   "repository": "git@github.com:hiwelo/flora11y.git",
@@ -8,7 +11,8 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "cz-conventional-changelog": "3.1.0"
+    "cz-conventional-changelog": "3.1.0",
+    "lerna": "^3.20.2"
   },
   "config": {
     "commitizen": {
