@@ -10,12 +10,13 @@
   "extends": [
     "airbnb",
     "airbnb/hooks",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended", 
     "plugin:react-hooks/recommended", 
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/react",
     "plugin:prettier/recommended"
   ],
   "plugins": ["jsx-a11y", "react-hooks"],
