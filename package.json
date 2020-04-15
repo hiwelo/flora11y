@@ -6,5 +6,13 @@
   "repository": "git@github.com:hiwelo/flora11y.git",
   "author": "Damien Senger <damien@raccoon.studio>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "cz-conventional-changelog": "3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
