@@ -1,5 +1,5 @@
 {
-  "name": "ui-kit",
+  "name": "@flora11y/ui-kit",
   "version": "0.0.1",
   "description": "Flora11y UI React components",
   "keywords": [
@@ -23,12 +23,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hiwelo/flora11y.git"
+    "url": "git+https://github.com/hiwelo/flora11y.git",
+    "directory": "packages/ui-kit"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/hiwelo/flora11y/issues"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
   }
 }
