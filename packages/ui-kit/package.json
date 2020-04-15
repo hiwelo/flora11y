@@ -13,7 +13,8 @@
   "author": "Damien Senger <damien@raccoon.studio>",
   "homepage": "https://github.com/hiwelo/flora11y#readme",
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "./lib/index.cjs.js",
+  "module": "./lib/index.esm.js",
   "types": "./lib/index.d.ts",
   "directories": {
     "lib": "lib"
@@ -30,7 +31,7 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check --watch",
     "build": "npm-run-all build:* --parallel",
-    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:js": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -52,6 +53,10 @@
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
     "fork-ts-checker-webpack-plugin": "^4.1.3",
+    "rollup": "^2.6.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "ts-loader": "^7.0.0"
   }
 }
