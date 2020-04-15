@@ -13,10 +13,10 @@
   "author": "Damien Senger <damien@raccoon.studio>",
   "homepage": "https://github.com/hiwelo/flora11y#readme",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -27,7 +27,11 @@
     "directory": "packages/ui-kit"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check --watch",
+    "build": "npm-run-all build:* --parallel",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "bugs": {
     "url": "https://github.com/hiwelo/flora11y/issues"
