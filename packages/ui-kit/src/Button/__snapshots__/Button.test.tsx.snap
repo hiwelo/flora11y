@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should match snapshot 1`] = `
+Array [
+  <button
+    className="sc-AxjAm jlznlR"
+    data-testid="default"
+    type="button"
+  >
+    Hello World!
+  </button>,
+  <a
+    className="sc-AxjAm jlznlR"
+    data-testid="link"
+    href="#"
+  >
+    Hello World!
+  </a>,
+  <button
+    aria-disabled={true}
+    className="sc-AxjAm jlznlR"
+    data-testid="disabledButton"
+    disabled={true}
+    type="button"
+  >
+    Hello World!
+  </button>,
+  <button
+    aria-disabled={true}
+    className="sc-AxjAm jlznlR"
+    data-testid="disabledLink"
+    disabled={true}
+    type="button"
+  >
+    Hello World!
+  </button>,
+  <button
+    aria-disabled={true}
+    className="sc-AxjAm jlznlR"
+    data-testid="focusableDisabledButton"
+    type="button"
+  >
+    Hello World!
+  </button>,
+]
+`;

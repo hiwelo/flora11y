@@ -12,7 +12,11 @@ const rollupConfig = {
   plugins: [
     resolve({ fileExtensions }),
     commonjs(),
-    babel({ fileExtensions, include: ['src/**/*'] }),
+    babel({
+      fileExtensions,
+      include: ['src/**/*'],
+      exclude: ['**/*.test.ts', '**/*.test.tsx'],
+    }),
   ],
   output: [
     {
