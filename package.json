@@ -16,8 +16,9 @@
   "scripts": {
     "build": "yarn build:ui-kit",
     "build:ui-kit": "lerna run build --scope=@flora11y/ui-kit",
+    "lint": "npm-run-all lint:*",
     "lint:js": "eslint \"packages/**/*.{js,ts,tsx}\" --quiet --fix",
-    "lint:ts": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
     "storybook": "lerna run storybook --scope=@flora11y/ui-kit",
     "test": "jest",
     "test:coverage": "yarn test --coverage"
