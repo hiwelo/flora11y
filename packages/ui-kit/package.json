@@ -40,8 +40,6 @@
     "url": "https://github.com/hiwelo/flora11y/issues"
   },
   "dependencies": {
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/preset-typescript": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.0"
