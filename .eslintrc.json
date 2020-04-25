@@ -7,6 +7,9 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "env": {
+    "jest/globals": true
+  },
   "extends": [
     "airbnb",
     "airbnb/hooks",
@@ -16,21 +19,25 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:jest/all",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended", 
     "plugin:react-hooks/recommended", 
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  "globals": {
+    "document": "readonly"
+  },
   "overrides": [
     {
-      "files": ["**/*.stories.tsx"],
+      "files": ["**/*.stories.tsx", "**/*.test.tsx"],
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
     }
   ],
-  "plugins": ["jsx-a11y", "react-hooks"],
+  "plugins": ["jest", "jsx-a11y", "react-hooks"],
   "rules": {
     "import/extensions": "off",
     "import/order": ["error", {
