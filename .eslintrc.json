@@ -33,6 +33,12 @@
   "plugins": ["jsx-a11y", "react-hooks"],
   "rules": {
     "import/extensions": "off",
+    "import/order": ["error", {
+      "alphabetize": {
+        "order": "asc"
+      },
+      "newlines-between": "always"
+    }],
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off"
