@@ -6,13 +6,12 @@ import { LinkProps } from './types';
 const Link: FunctionComponent<LinkProps> = ({
   children,
   href,
-  rel,
   target,
   ...rest
 }) => {
   const isLink = !!href;
   const computedRel = target === '_blank' ? 'noopener noreferrer' : undefined;
-  const relAttr = isLink ? rel ?? computedRel : undefined;
+  const relAttr = isLink ? computedRel : undefined;
   const targetAttr = isLink ? target : undefined;
 
   return (
