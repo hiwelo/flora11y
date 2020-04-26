@@ -39,6 +39,11 @@
   ],
   "plugins": ["jest", "jsx-a11y", "react-hooks"],
   "rules": {
+    "@typescript-eslint/member-ordering": ["error", {
+      "default": { 
+        "order": "alphabetically" 
+      }
+    }],
     "import/extensions": "off",
     "import/order": ["error", {
       "alphabetize": {
