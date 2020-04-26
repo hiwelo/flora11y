@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> should match snapshot 1`] = `
+Array [
+  <a
+    className="sc-AxjAm gUSXVV"
+    data-testid="defaultLink"
+    href="#test"
+  >
+    Hello World!
+  </a>,
+  <a
+    className="sc-AxjAm gUSXVV"
+    data-testid="targetBlankLink"
+    href="#test"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Hello World!
+  </a>,
+  <a
+    className="sc-AxjAm gUSXVV"
+    data-testid="targetBlankLinkWithRelOverride"
+    href="#test"
+    target="_blank"
+  >
+    Hello World!
+  </a>,
+  <a
+    className="sc-AxjAm gUSXVV"
+    data-testid="targetBlankLinkWithCustomRel"
+    href="#test"
+    rel="noopener"
+    target="_blank"
+  >
+    Hello World!
+  </a>,
+  <button
+    className="sc-AxjAm gUSXVV"
+    data-testid="linkWithoutHref"
+    onClick={[MockFunction]}
+    type="button"
+  >
+    Hello World!
+  </button>,
+]
+`;
