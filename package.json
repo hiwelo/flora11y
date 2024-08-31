@@ -90,7 +90,7 @@
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.1"
+    "webpack": "^5.94.0"
   },
   "config": {
     "commitizen": {
